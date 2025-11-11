@@ -1,0 +1,5 @@
+#!/bin/bash
+if [ -d _build ]; then
+	rm -rf _build/install/Plugins/python
+	rm -rf _build/python
+fi

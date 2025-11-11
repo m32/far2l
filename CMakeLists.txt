@@ -559,6 +559,36 @@ else()
         " COMPONENT system)
 endif()
 
+if (NOT DEFINED SQLITE OR SQLITE)
+    message(STATUS "SQLITE plugin enabled")
+    add_subdirectory (sqlite)
+else()
+    message(STATUS "${ColorRed}SQLITE plugin disabled due to SQLITE=${SQLITE}${ColorNormal}")
+    install(CODE "
+        execute_process(COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_INSTALL_PREFIX}/lib/far2l/Plugins/sqlite/plug/sqlite.far-plug-wide)
+        " COMPONENT system)
+endif()
+
+if (NOT DEFINED DIALOGDEMO OR DIALOGDEMO)
+    message(STATUS "DIALOGDEMO plugin enabled")
+    add_subdirectory (m32-todo/dialogDemo)
+else()
+    message(STATUS "${ColorRed}DIALOGDEMO plugin disabled due to DIALOGDEMO=${DIALOGDEMO}${ColorNormal}")
+    install(CODE "
+        execute_process(COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_INSTALL_PREFIX}/lib/far2l/Plugins/dialogdemo/plug/dialogdemo.far-plug-wide)
+        " COMPONENT system)
+endif()
+
+#if (NOT DEFINED FARDROID OR FARDROID)
+#    message(STATUS "FARDROID plugin enabled")
+#    add_subdirectory (m32-todo/FarDroid)
+#else()
+#    message(STATUS "${ColorRed}FARDROID plugin disabled due to DIALOGDEMO=${DIALOGDEMO}${ColorNormal}")
+#    install(CODE "
+#        execute_process(COMMAND ${CMAKE_COMMAND} -E rm -f ${CMAKE_INSTALL_PREFIX}/lib/far2l/Plugins/fardroid/plug/fardroid.far-plug-wide)
+#        " COMPONENT system)
+#endif()
+
 ##############################
 # common install directives
 
