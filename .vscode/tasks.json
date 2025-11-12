@@ -6,7 +6,7 @@
         {
             "label": "cmake",
             "type": "shell",
-            "command": "cd _build && cmake -DCMAKE_BUILD_TYPE=Debug -DEACP=NO -DEDITORCOMP=NO -DPYTHON=YES .."
+            "command": "cd _build && cmake -DCMAKE_BUILD_TYPE=Debug -DUSEWX=YES -DEACP=NO -DEDITORCOMP=NO -DPYTHON=YES .."
         },
         {
             "label": "make",

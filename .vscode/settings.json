@@ -76,9 +76,7 @@
         "__nullptr": "cpp"
     },
     "i18n-ally.localesPaths": [
-        "hexitor/i18n",
-        "far2l/src/locale",
-        "_build/far2l/CMakeFiles/far2l.dir/src/locale"
+        "edsort/i18n"
     ],
     "i18n-ally.keystyle": "nested"
 }
