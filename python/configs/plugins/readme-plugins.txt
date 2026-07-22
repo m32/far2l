@@ -128,7 +128,7 @@ usqlite.py
     active plugins, and the first one to respond becomes active.
     Keys:
         F4 - edit current item - table definition or sigle row data
-        F4+CTRL - at database structure whos pragmas used in current database
+        F4+CTRL - at database structure, shows its pragma's
 ustealer.py
     This plugin allows you to view password fields in dialogues,
     e.g. open the netrocks host list, select the one with a password,
