@@ -118,6 +118,7 @@ limit {}, {}
         py_kbt_normal = [wcn]*12
         py_kbt_ctrl = [wcn]*12
         py_kbt_alt = [wcn]*12
+        py_kbt_shift = [wcn]*12
         py_kbt_ctrl_shift = [wcn]*12
         py_kbt_alt_shift = [wcn]*12
         py_kbt_ctrl_alt = [wcn]*12
@@ -130,6 +131,7 @@ limit {}, {}
             py_kbt_normal,
             py_kbt_ctrl,
             py_kbt_alt,
+            py_kbt_shift,
             py_kbt_ctrl_shift,
             py_kbt_alt_shift,
             py_kbt_ctrl_alt
@@ -324,6 +326,7 @@ class SqlMetadataHandler(SqlData):
         py_kbt_normal = [wcn]*12
         py_kbt_ctrl = [wcn]*12
         py_kbt_alt = [wcn]*12
+        py_kbt_shift = [wcn]*12
         py_kbt_ctrl_shift = [wcn]*12
         py_kbt_alt_shift = [wcn]*12
         py_kbt_ctrl_alt = [wcn]*12
@@ -335,6 +338,7 @@ class SqlMetadataHandler(SqlData):
             py_kbt_normal,
             py_kbt_ctrl,
             py_kbt_alt,
+            py_kbt_shift,
             py_kbt_ctrl_shift,
             py_kbt_alt_shift,
             py_kbt_ctrl_alt
